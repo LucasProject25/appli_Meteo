@@ -1,0 +1,100 @@
+body {
+  box-sizing: border-box;
+}
+
+#cards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 50px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 500px;
+  height: 300px;
+  border-radius: 5%;
+  box-shadow: 2px 2px 12px rgb(0, 0, 0, 1);
+  background-color: #a5a3a3;
+}
+
+.card--clouds {
+  background-image: url(./cloud.gif);
+  background-size: cover;
+  background-position: center;
+}
+
+.card--sun {
+  background-image: url(./sun.gif);
+  background-position: 10% 100%;
+}
+
+.card--fog {
+  background-image: url(./fog.gif);
+  background-size: cover;
+  background-position: center;
+}
+
+.card--snow {
+  background-image: url(./snow.gif);
+  background-size: cover;
+  background-position: center;
+}
+
+.card--rain {
+  background-image: url(./rain.gif);
+  background-size: cover;
+  background-position: center;
+}
+
+.card--thunderstorm {
+  background-image: url(./thunderstorm.gif);
+  background-size: cover;
+  background-position: center;
+}
+
+.card__date {
+  text-transform: capitalize;
+}
+
+.card__temps {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin: 0.2em 0;
+}
+
+.card__description {
+  font-style: italic;
+  margin: 0.2em 0;
+  text-transform: uppercase;
+}
+
+.card__weather {
+  text-align: center;
+}
+
+.card__wind {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+p,
+h1,
+h2,
+h3 {
+  text-align: center;
+  font-family: "Arial", sans-serif;
+}
+
+h1 {
+  font-size: 3em;
+  margin: 0.2em 0;
+  margin-bottom: 2em;
+}
